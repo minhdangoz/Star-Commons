@@ -3,8 +3,8 @@
     xmlns:tools="http://schemas.android.com/tools">
 
     <queries>
-        <package android:name="com.simplemobiletools.thankyou.debug" />
-        <package android:name="com.simplemobiletools.thankyou" />
+        <package android:name="com.mobilestartools.thankyou.debug" />
+        <package android:name="com.mobilestartools.thankyou" />
     </queries>
 
     <uses-feature

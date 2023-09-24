@@ -81,17 +81,17 @@ fun Activity.appLaunched(appId: String) {
     }
 
     baseConfig.appRunCount++
-    if (baseConfig.appRunCount % 30 == 0 && !isAProApp()) {
-        if (!resources.getBoolean(R.bool.hide_google_relations)) {
-            showDonateOrUpgradeDialog()
-        }
-    }
-
-    if (baseConfig.appRunCount % 40 == 0 && !baseConfig.wasAppRated) {
-        if (!resources.getBoolean(R.bool.hide_google_relations)) {
-            RateStarsDialog(this)
-        }
-    }
+//    if (baseConfig.appRunCount % 30 == 0 && !isAProApp()) {
+//        if (!resources.getBoolean(R.bool.hide_google_relations)) {
+//            showDonateOrUpgradeDialog()
+//        }
+//    }
+//
+//    if (baseConfig.appRunCount % 40 == 0 && !baseConfig.wasAppRated) {
+//        if (!resources.getBoolean(R.bool.hide_google_relations)) {
+//            RateStarsDialog(this)
+//        }
+//    }
 }
 
 fun Activity.showDonateOrUpgradeDialog() {
@@ -291,7 +291,7 @@ fun BaseSimpleActivity.showOTGPermissionDialog(path: String) {
 fun Activity.launchPurchaseThankYouIntent() {
     hideKeyboard()
     try {
-        launchViewIntent("market://details?id=com.simplemobiletools.thankyou")
+        launchViewIntent("market://details?id=com.mobilestartools.thankyou")
     } catch (ignored: Exception) {
         launchViewIntent(getString(R.string.thank_you_url))
     }
@@ -307,7 +307,7 @@ fun Activity.launchUpgradeToProIntent() {
 }
 
 fun Activity.launchMoreAppsFromUsIntent() {
-    launchViewIntent("https://play.google.com/store/apps/dev?id=9070296388022589266")
+    launchViewIntent("https://play.google.com/store/apps/dev?id=7884684637904001011")
 }
 
 fun Activity.launchViewIntent(id: Int) = launchViewIntent(getString(id))

@@ -1,19 +1,19 @@
 <resources>
-    <string name="package_name">com.simplemobiletools.commons</string>
+    <string name="package_name">com.mobilestartools.commons</string>
     <string name="pro">Pro</string>
-    <string name="simple_commons">Simple Commons</string>
+    <string name="simple_commons">Star Commons</string>
     <string name="progress">%1$s / %2$s</string>
-    <string name="donate_url">https://www.simplemobiletools.com/donate#paypal</string>
-    <string name="thank_you_url">https://play.google.com/store/apps/details?id=com.simplemobiletools.thankyou</string>
+    <string name="donate_url">https://www.mobilestartools.com/donate#paypal</string>
+    <string name="thank_you_url">https://play.google.com/store/apps/details?id=com.mobilestartools.thankyou</string>
     <string name="a_m">am</string>
     <string name="p_m">pm</string>
     <string name="material_you">Material You</string>
 
     <!-- About -->
     <string name="two_string_placeholder">%1$s%2$s</string>
-    <string name="my_website">\nhttps://simplemobiletools.com</string>
-    <string name="my_email">hello@simplemobiletools.com</string>
-    <string name="my_fake_email">noreply@simplemobiletools.com</string>
+    <string name="my_website">\nhttps://mobilestartools.com</string>
+    <string name="my_email">hello@mobilestartools.com</string>
+    <string name="my_fake_email">noreply@mobilestartools.com</string>
     <string name="facebook">Facebook</string>
     <string name="reddit">Reddit</string>
     <string name="telegram">Telegram</string>

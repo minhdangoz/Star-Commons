@@ -130,7 +130,7 @@ class AboutActivity : ComponentActivity() {
         val separator = "------------------------------"
         val body = "$appVersion$newline$deviceOS$newline$separator$newline$newline"
 
-        val address = if (packageName.startsWith("com.simplemobiletools")) {
+        val address = if (packageName.startsWith("com.mobilestartools")) {
             getString(R.string.my_email)
         } else {
             getString(R.string.my_fake_email)
@@ -206,7 +206,7 @@ class AboutActivity : ComponentActivity() {
     }
 
     private fun onFacebookClick() {
-        var link = "https://www.facebook.com/simplemobiletools"
+        var link = "https://www.facebook.com/mobilestartools"
         try {
             packageManager.getPackageInfo("com.facebook.katana", 0)
             link = "fb://page/150270895341774"
@@ -217,26 +217,26 @@ class AboutActivity : ComponentActivity() {
     }
 
     private fun onGithubClick() {
-        launchViewIntent("https://github.com/SimpleMobileTools")
+        launchViewIntent("https://gitlab.com/mobilestartools")
     }
 
     private fun onRedditClick() {
-        launchViewIntent("https://www.reddit.com/r/SimpleMobileTools")
+        launchViewIntent("https://www.reddit.com/r/mobilestartools")
     }
 
 
     private fun onTelegramClick() {
-        launchViewIntent("https://t.me/SimpleMobileTools")
+        launchViewIntent("https://t.me/mobilestartools")
     }
 
 
     private fun onWebsiteClick() {
-        launchViewIntent("https://simplemobiletools.com/")
+        launchViewIntent("https://mobilestartools.com/")
     }
 
     private fun onPrivacyPolicyClick() {
-        val appId = baseConfig.appId.removeSuffix(".debug").removeSuffix(".pro").removePrefix("com.simplemobiletools.")
-        val url = "https://simplemobiletools.com/privacy/$appId.txt"
+        val appId = baseConfig.appId.removeSuffix(".debug").removeSuffix(".pro").removePrefix("com.mobilestartools.")
+        val url = "https://mobilestartools.com/privacy/$appId.txt"
         launchViewIntent(url)
     }
 
