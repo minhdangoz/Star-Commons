@@ -5,9 +5,9 @@ import android.content.res.Resources
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import android.widget.LinearLayout
-import com.simplemobiletools.commons.R
-import com.simplemobiletools.commons.databinding.DialogPropertiesBinding
-import com.simplemobiletools.commons.databinding.ItemPropertyBinding
+import com.mobilestartools.commons.R
+import com.mobilestartools.commons.databinding.DialogPropertiesBinding
+import com.mobilestartools.commons.databinding.ItemPropertyBinding
 import com.simplemobiletools.commons.extensions.copyToClipboard
 import com.simplemobiletools.commons.extensions.getProperTextColor
 import com.simplemobiletools.commons.extensions.showLocationOnMap

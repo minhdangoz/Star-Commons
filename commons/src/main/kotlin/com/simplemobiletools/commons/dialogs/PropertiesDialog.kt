@@ -8,7 +8,7 @@ import android.view.View
 import android.widget.LinearLayout
 import androidx.appcompat.app.AlertDialog
 import androidx.exifinterface.media.ExifInterface
-import com.simplemobiletools.commons.R
+import com.mobilestartools.commons.R
 import com.simplemobiletools.commons.activities.BaseSimpleActivity
 import com.simplemobiletools.commons.extensions.*
 import com.simplemobiletools.commons.helpers.*

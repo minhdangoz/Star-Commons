@@ -1,8 +1,8 @@
 package com.simplemobiletools.commons.dialogs
 
 import android.app.Activity
-import com.simplemobiletools.commons.R
-import com.simplemobiletools.commons.databinding.DialogFileConflictBinding
+import com.mobilestartools.commons.R
+import com.mobilestartools.commons.databinding.DialogFileConflictBinding
 import com.simplemobiletools.commons.extensions.baseConfig
 import com.simplemobiletools.commons.extensions.beVisibleIf
 import com.simplemobiletools.commons.extensions.getAlertDialogBuilder

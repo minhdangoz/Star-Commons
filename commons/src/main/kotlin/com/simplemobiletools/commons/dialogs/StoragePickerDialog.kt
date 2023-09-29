@@ -4,10 +4,10 @@ import android.view.LayoutInflater
 import android.view.ViewGroup
 import android.widget.RadioGroup
 import androidx.appcompat.app.AlertDialog
-import com.simplemobiletools.commons.R
+import com.mobilestartools.commons.R
 import com.simplemobiletools.commons.activities.BaseSimpleActivity
-import com.simplemobiletools.commons.databinding.DialogRadioGroupBinding
-import com.simplemobiletools.commons.databinding.RadioButtonBinding
+import com.mobilestartools.commons.databinding.DialogRadioGroupBinding
+import com.mobilestartools.commons.databinding.RadioButtonBinding
 import com.simplemobiletools.commons.extensions.*
 
 /**

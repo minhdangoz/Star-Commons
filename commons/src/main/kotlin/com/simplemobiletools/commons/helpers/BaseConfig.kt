@@ -4,7 +4,7 @@ import android.content.Context
 import android.content.res.Configuration
 import android.os.Environment
 import android.text.format.DateFormat
-import com.simplemobiletools.commons.R
+import com.mobilestartools.commons.R
 import com.simplemobiletools.commons.extensions.getInternalStoragePath
 import com.simplemobiletools.commons.extensions.getSDCardPath
 import com.simplemobiletools.commons.extensions.getSharedPrefs

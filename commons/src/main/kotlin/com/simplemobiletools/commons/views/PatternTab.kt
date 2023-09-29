@@ -11,8 +11,8 @@ import androidx.core.os.postDelayed
 import com.andrognito.patternlockview.PatternLockView
 import com.andrognito.patternlockview.listener.PatternLockViewListener
 import com.andrognito.patternlockview.utils.PatternLockUtils
-import com.simplemobiletools.commons.R
-import com.simplemobiletools.commons.databinding.TabPatternBinding
+import com.mobilestartools.commons.R
+import com.mobilestartools.commons.databinding.TabPatternBinding
 import com.simplemobiletools.commons.extensions.*
 import com.simplemobiletools.commons.helpers.PROTECTION_PATTERN
 import com.simplemobiletools.commons.interfaces.BaseSecurityTab

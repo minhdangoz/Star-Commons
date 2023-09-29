@@ -1,9 +1,9 @@
 package com.simplemobiletools.commons.dialogs
 
 import androidx.appcompat.app.AlertDialog
-import com.simplemobiletools.commons.R
+import com.mobilestartools.commons.R
 import com.simplemobiletools.commons.activities.BaseSimpleActivity
-import com.simplemobiletools.commons.databinding.DialogExportBlockedNumbersBinding
+import com.mobilestartools.commons.databinding.DialogExportBlockedNumbersBinding
 import com.simplemobiletools.commons.extensions.*
 import com.simplemobiletools.commons.helpers.BLOCKED_NUMBERS_EXPORT_EXTENSION
 import com.simplemobiletools.commons.helpers.ensureBackgroundThread

@@ -5,7 +5,7 @@ import android.util.AttributeSet
 import android.view.LayoutInflater
 import android.view.MotionEvent
 import android.widget.LinearLayout
-import com.simplemobiletools.commons.R
+import com.mobilestartools.commons.R
 import com.simplemobiletools.commons.extensions.isRTLLayout
 import com.simplemobiletools.commons.extensions.onGlobalLayout
 import com.simplemobiletools.commons.interfaces.LineColorPickerListener

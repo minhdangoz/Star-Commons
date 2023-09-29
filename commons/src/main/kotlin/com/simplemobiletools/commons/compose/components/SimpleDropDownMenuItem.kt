@@ -68,6 +68,6 @@ fun SimpleDropDownMenuItem(
 @Composable
 private fun SimpleDropDownMenuItemPreview() {
     AppThemeSurface {
-        SimpleDropDownMenuItem(text = com.simplemobiletools.commons.R.string.copy, onClick = {})
+        SimpleDropDownMenuItem(text = com.mobilestartools.commons.R.string.copy, onClick = {})
     }
 }

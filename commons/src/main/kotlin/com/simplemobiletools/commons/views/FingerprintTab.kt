@@ -10,8 +10,8 @@ import androidx.biometric.auth.AuthPromptHost
 import com.github.ajalt.reprint.core.AuthenticationFailureReason
 import com.github.ajalt.reprint.core.AuthenticationListener
 import com.github.ajalt.reprint.core.Reprint
-import com.simplemobiletools.commons.R
-import com.simplemobiletools.commons.databinding.TabFingerprintBinding
+import com.mobilestartools.commons.R
+import com.mobilestartools.commons.databinding.TabFingerprintBinding
 import com.simplemobiletools.commons.extensions.*
 import com.simplemobiletools.commons.helpers.PROTECTION_FINGERPRINT
 import com.simplemobiletools.commons.interfaces.HashListener

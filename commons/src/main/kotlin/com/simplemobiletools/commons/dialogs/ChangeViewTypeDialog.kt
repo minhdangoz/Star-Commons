@@ -1,8 +1,8 @@
 package com.simplemobiletools.commons.dialogs
 
-import com.simplemobiletools.commons.R
+import com.mobilestartools.commons.R
 import com.simplemobiletools.commons.activities.BaseSimpleActivity
-import com.simplemobiletools.commons.databinding.DialogChangeViewTypeBinding
+import com.mobilestartools.commons.databinding.DialogChangeViewTypeBinding
 import com.simplemobiletools.commons.extensions.baseConfig
 import com.simplemobiletools.commons.extensions.getAlertDialogBuilder
 import com.simplemobiletools.commons.extensions.setupDialogStuff

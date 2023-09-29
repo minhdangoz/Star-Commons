@@ -5,8 +5,8 @@ import android.util.AttributeSet
 import android.widget.TextView
 import android.widget.Toast
 import androidx.biometric.auth.AuthPromptHost
-import com.simplemobiletools.commons.R
-import com.simplemobiletools.commons.databinding.TabPinBinding
+import com.mobilestartools.commons.R
+import com.mobilestartools.commons.databinding.TabPinBinding
 import com.simplemobiletools.commons.extensions.*
 import com.simplemobiletools.commons.helpers.MINIMUM_PIN_LENGTH
 import com.simplemobiletools.commons.helpers.PROTECTION_PIN

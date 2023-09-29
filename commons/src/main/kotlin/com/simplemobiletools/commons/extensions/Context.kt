@@ -42,7 +42,7 @@ import androidx.loader.content.CursorLoader
 import com.github.ajalt.reprint.core.Reprint
 import com.google.gson.Gson
 import com.google.gson.reflect.TypeToken
-import com.simplemobiletools.commons.R
+import com.mobilestartools.commons.R
 import com.simplemobiletools.commons.helpers.*
 import com.simplemobiletools.commons.models.AlarmSound
 import com.simplemobiletools.commons.models.BlockedNumber

@@ -8,7 +8,7 @@ import android.content.res.Configuration
 import android.graphics.Color
 import android.view.ViewGroup
 import androidx.loader.content.CursorLoader
-import com.simplemobiletools.commons.R
+import com.mobilestartools.commons.R
 import com.simplemobiletools.commons.helpers.*
 import com.simplemobiletools.commons.models.SharedTheme
 import com.simplemobiletools.commons.views.*

@@ -10,7 +10,7 @@ import android.os.Handler
 import android.os.Looper
 import android.provider.ContactsContract
 import android.telephony.PhoneNumberUtils
-import com.simplemobiletools.commons.R
+import com.mobilestartools.commons.R
 import com.simplemobiletools.commons.activities.BaseSimpleActivity
 import com.simplemobiletools.commons.databases.ContactsDatabase
 import com.simplemobiletools.commons.dialogs.CallConfirmationDialog

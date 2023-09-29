@@ -36,7 +36,7 @@ class StringsAdapter(
         }
     }
 
-    override fun getActionMenuId() = com.simplemobiletools.commons.R.menu.cab_delete_only
+    override fun getActionMenuId() = com.mobilestartools.commons.R.menu.cab_delete_only
 
     override fun prepareActionMode(menu: Menu) {}
 
@@ -46,7 +46,7 @@ class StringsAdapter(
         }
 
         when (id) {
-            com.simplemobiletools.commons.R.id.cab_delete -> changeOrder()
+            com.mobilestartools.commons.R.id.cab_delete -> changeOrder()
         }
     }
 

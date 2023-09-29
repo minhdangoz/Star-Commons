@@ -13,7 +13,7 @@ import android.widget.ImageView
 import android.widget.LinearLayout
 import androidx.annotation.IdRes
 import com.google.android.material.animation.AnimationUtils
-import com.simplemobiletools.commons.R
+import com.mobilestartools.commons.R
 import com.simplemobiletools.commons.extensions.applyColorFilter
 import com.simplemobiletools.commons.extensions.beVisibleIf
 import com.simplemobiletools.commons.extensions.toast

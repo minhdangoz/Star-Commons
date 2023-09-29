@@ -4,7 +4,7 @@ import android.content.Context
 import android.view.HapticFeedbackConstants
 import android.view.View
 import android.view.ViewTreeObserver
-import com.simplemobiletools.commons.R
+import com.mobilestartools.commons.R
 import com.simplemobiletools.commons.helpers.SHORT_ANIMATION_DURATION
 
 fun View.beInvisibleIf(beInvisible: Boolean) = if (beInvisible) beInvisible() else beVisible()

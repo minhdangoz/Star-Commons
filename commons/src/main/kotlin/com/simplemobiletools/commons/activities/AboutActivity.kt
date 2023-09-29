@@ -12,7 +12,7 @@ import androidx.activity.compose.setContent
 import androidx.compose.runtime.remember
 import androidx.compose.ui.platform.LocalContext
 import androidx.core.net.toUri
-import com.simplemobiletools.commons.R
+import com.mobilestartools.commons.R
 import com.simplemobiletools.commons.compose.extensions.enableEdgeToEdgeSimple
 import com.simplemobiletools.commons.compose.screens.*
 import com.simplemobiletools.commons.compose.theme.AppThemeSurface

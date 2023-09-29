@@ -35,9 +35,9 @@ import androidx.core.view.WindowInsetsCompat
 import androidx.documentfile.provider.DocumentFile
 import androidx.fragment.app.FragmentActivity
 import com.google.android.material.dialog.MaterialAlertDialogBuilder
-import com.simplemobiletools.commons.R
+import com.mobilestartools.commons.R
 import com.simplemobiletools.commons.activities.BaseSimpleActivity
-import com.simplemobiletools.commons.databinding.DialogTitleBinding
+import com.mobilestartools.commons.databinding.DialogTitleBinding
 import com.simplemobiletools.commons.dialogs.*
 import com.simplemobiletools.commons.dialogs.WritePermissionDialog.Mode
 import com.simplemobiletools.commons.helpers.*

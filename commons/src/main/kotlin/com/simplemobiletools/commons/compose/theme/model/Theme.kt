@@ -7,7 +7,7 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.toArgb
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.res.colorResource
-import com.simplemobiletools.commons.R
+import com.mobilestartools.commons.R
 import com.simplemobiletools.commons.compose.extensions.config
 import com.simplemobiletools.commons.compose.theme.isInDarkThemeAndSurfaceIsNotLitWell
 import com.simplemobiletools.commons.helpers.isSPlus

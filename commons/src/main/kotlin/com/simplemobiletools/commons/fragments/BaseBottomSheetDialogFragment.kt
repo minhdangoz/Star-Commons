@@ -7,8 +7,8 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.core.content.res.ResourcesCompat
 import com.google.android.material.bottomsheet.BottomSheetDialogFragment
-import com.simplemobiletools.commons.R
-import com.simplemobiletools.commons.databinding.DialogBottomSheetBinding
+import com.mobilestartools.commons.R
+import com.mobilestartools.commons.databinding.DialogBottomSheetBinding
 import com.simplemobiletools.commons.extensions.*
 
 abstract class BaseBottomSheetDialogFragment : BottomSheetDialogFragment() {

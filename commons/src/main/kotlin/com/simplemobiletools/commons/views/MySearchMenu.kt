@@ -5,9 +5,9 @@ import android.content.Context
 import android.util.AttributeSet
 import android.view.LayoutInflater
 import com.google.android.material.appbar.AppBarLayout
-import com.simplemobiletools.commons.R
+import com.mobilestartools.commons.R
 import com.simplemobiletools.commons.activities.BaseSimpleActivity
-import com.simplemobiletools.commons.databinding.MenuSearchBinding
+import com.mobilestartools.commons.databinding.MenuSearchBinding
 import com.simplemobiletools.commons.extensions.*
 import com.simplemobiletools.commons.helpers.LOWER_ALPHA
 import com.simplemobiletools.commons.helpers.MEDIUM_ALPHA

@@ -5,10 +5,10 @@ import android.text.Html
 import androidx.appcompat.app.AlertDialog
 import com.bumptech.glide.Glide
 import com.bumptech.glide.load.resource.drawable.DrawableTransitionOptions
-import com.simplemobiletools.commons.R
+import com.mobilestartools.commons.R
 import com.simplemobiletools.commons.activities.BaseSimpleActivity
-import com.simplemobiletools.commons.databinding.DialogWritePermissionBinding
-import com.simplemobiletools.commons.databinding.DialogWritePermissionOtgBinding
+import com.mobilestartools.commons.databinding.DialogWritePermissionBinding
+import com.mobilestartools.commons.databinding.DialogWritePermissionOtgBinding
 import com.simplemobiletools.commons.extensions.getAlertDialogBuilder
 import com.simplemobiletools.commons.extensions.humanizePath
 import com.simplemobiletools.commons.extensions.setupDialogStuff

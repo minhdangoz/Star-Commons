@@ -1,9 +1,9 @@
 package com.simplemobiletools.commons.dialogs
 
 import androidx.appcompat.app.AlertDialog
-import com.simplemobiletools.commons.R
+import com.mobilestartools.commons.R
 import com.simplemobiletools.commons.activities.BaseSimpleActivity
-import com.simplemobiletools.commons.databinding.DialogRenameItemBinding
+import com.mobilestartools.commons.databinding.DialogRenameItemBinding
 import com.simplemobiletools.commons.extensions.*
 
 class RenameItemDialog(val activity: BaseSimpleActivity, val path: String, val callback: (newPath: String) -> Unit) {

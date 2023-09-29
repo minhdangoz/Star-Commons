@@ -1,4 +1,4 @@
-package com.simplemobiletools.commons.receivers
+package com.mobilestartools.commons.Receivers
 
 import android.content.BroadcastReceiver
 import android.content.Context

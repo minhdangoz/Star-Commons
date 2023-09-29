@@ -7,9 +7,9 @@ import android.text.format.DateFormat
 import android.util.AttributeSet
 import android.widget.RelativeLayout
 import androidx.exifinterface.media.ExifInterface
-import com.simplemobiletools.commons.R
+import com.mobilestartools.commons.R
 import com.simplemobiletools.commons.activities.BaseSimpleActivity
-import com.simplemobiletools.commons.databinding.DialogRenameItemsPatternBinding
+import com.mobilestartools.commons.databinding.DialogRenameItemsPatternBinding
 import com.simplemobiletools.commons.extensions.*
 import com.simplemobiletools.commons.helpers.isNougatPlus
 import com.simplemobiletools.commons.interfaces.RenameTab

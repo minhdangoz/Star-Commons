@@ -50,8 +50,8 @@ app-build-minimumSDK = "23"
 app-build-javaVersion = "VERSION_17"
 app-build-kotlinJVMTarget = "17"
 #versioning
-app-version-appId = "com.simplemobiletools.commons"
-app-version-groupId = "com.simplemobiletools.commons"
+app-version-appId = "com.mobilestartools.commons"
+app-version-groupId = "com.mobilestartools.commons"
 app-version-versionCode = "1"
 app-version-versionName = "5.34.26"
 [libraries]

@@ -5,8 +5,8 @@ import android.graphics.Color
 import android.graphics.drawable.LayerDrawable
 import android.graphics.drawable.RippleDrawable
 import android.os.Bundle
-import com.simplemobiletools.commons.R
-import com.simplemobiletools.commons.databinding.ActivityCustomizationBinding
+import com.mobilestartools.commons.R
+import com.mobilestartools.commons.databinding.ActivityCustomizationBinding
 import com.simplemobiletools.commons.dialogs.*
 import com.simplemobiletools.commons.extensions.*
 import com.simplemobiletools.commons.helpers.*

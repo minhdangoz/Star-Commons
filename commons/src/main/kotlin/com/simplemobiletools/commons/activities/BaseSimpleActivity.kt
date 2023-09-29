@@ -39,7 +39,7 @@ import androidx.core.view.ScrollingView
 import androidx.core.view.WindowInsetsCompat
 import androidx.core.widget.NestedScrollView
 import androidx.recyclerview.widget.RecyclerView
-import com.simplemobiletools.commons.R
+import com.mobilestartools.commons.R
 import com.simplemobiletools.commons.asynctasks.CopyMoveTask
 import com.simplemobiletools.commons.dialogs.*
 import com.simplemobiletools.commons.dialogs.WritePermissionDialog.Mode

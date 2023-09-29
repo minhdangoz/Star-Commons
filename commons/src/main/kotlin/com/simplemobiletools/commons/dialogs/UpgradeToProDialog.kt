@@ -2,8 +2,8 @@ package com.simplemobiletools.commons.dialogs
 
 import android.app.Activity
 import androidx.appcompat.app.AlertDialog
-import com.simplemobiletools.commons.R
-import com.simplemobiletools.commons.databinding.DialogUpgradeToProBinding
+import com.mobilestartools.commons.R
+import com.mobilestartools.commons.databinding.DialogUpgradeToProBinding
 import com.simplemobiletools.commons.extensions.getAlertDialogBuilder
 import com.simplemobiletools.commons.extensions.launchUpgradeToProIntent
 import com.simplemobiletools.commons.extensions.launchViewIntent

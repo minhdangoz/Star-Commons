@@ -2,8 +2,8 @@ package com.simplemobiletools.commons.dialogs
 
 import android.app.Activity
 import android.view.LayoutInflater
-import com.simplemobiletools.commons.R
-import com.simplemobiletools.commons.databinding.DialogWhatsNewBinding
+import com.mobilestartools.commons.R
+import com.mobilestartools.commons.databinding.DialogWhatsNewBinding
 import com.simplemobiletools.commons.extensions.getAlertDialogBuilder
 import com.simplemobiletools.commons.extensions.setupDialogStuff
 import com.simplemobiletools.commons.models.Release

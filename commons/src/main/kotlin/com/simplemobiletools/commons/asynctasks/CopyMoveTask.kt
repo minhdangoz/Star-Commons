@@ -9,7 +9,7 @@ import android.provider.MediaStore
 import androidx.core.app.NotificationCompat
 import androidx.core.util.Pair
 import androidx.documentfile.provider.DocumentFile
-import com.simplemobiletools.commons.R
+import com.mobilestartools.commons.R
 import com.simplemobiletools.commons.activities.BaseSimpleActivity
 import com.simplemobiletools.commons.extensions.*
 import com.simplemobiletools.commons.helpers.CONFLICT_KEEP_BOTH

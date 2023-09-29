@@ -6,8 +6,8 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
-import com.simplemobiletools.commons.R
-import com.simplemobiletools.commons.databinding.ItemSimpleListBinding
+import com.mobilestartools.commons.R
+import com.mobilestartools.commons.databinding.ItemSimpleListBinding
 import com.simplemobiletools.commons.extensions.*
 import com.simplemobiletools.commons.models.SimpleListItem
 

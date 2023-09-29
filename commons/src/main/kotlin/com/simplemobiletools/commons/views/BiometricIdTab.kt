@@ -4,7 +4,7 @@ import android.content.Context
 import android.util.AttributeSet
 import androidx.biometric.auth.AuthPromptHost
 import androidx.constraintlayout.widget.ConstraintLayout
-import com.simplemobiletools.commons.databinding.TabBiometricIdBinding
+import com.mobilestartools.commons.databinding.TabBiometricIdBinding
 import com.simplemobiletools.commons.extensions.*
 import com.simplemobiletools.commons.helpers.DARK_GREY
 import com.simplemobiletools.commons.interfaces.HashListener

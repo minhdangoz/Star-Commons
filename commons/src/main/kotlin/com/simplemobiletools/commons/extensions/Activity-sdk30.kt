@@ -2,7 +2,7 @@ package com.simplemobiletools.commons.extensions
 
 import android.content.ContentValues
 import android.provider.MediaStore
-import com.simplemobiletools.commons.R
+import com.mobilestartools.commons.R
 import com.simplemobiletools.commons.activities.BaseSimpleActivity
 import com.simplemobiletools.commons.models.FileDirItem
 import java.io.File

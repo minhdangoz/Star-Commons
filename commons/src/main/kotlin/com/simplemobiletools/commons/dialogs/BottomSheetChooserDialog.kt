@@ -4,7 +4,7 @@ import android.os.Bundle
 import android.view.ViewGroup
 import androidx.fragment.app.FragmentManager
 import com.simplemobiletools.commons.adapters.setupSimpleListItem
-import com.simplemobiletools.commons.databinding.ItemSimpleListBinding
+import com.mobilestartools.commons.databinding.ItemSimpleListBinding
 import com.simplemobiletools.commons.fragments.BaseBottomSheetDialogFragment
 import com.simplemobiletools.commons.models.SimpleListItem
 

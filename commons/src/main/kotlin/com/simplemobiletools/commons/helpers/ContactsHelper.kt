@@ -12,7 +12,7 @@ import android.provider.ContactsContract.*
 import android.provider.MediaStore
 import android.text.TextUtils
 import android.util.SparseArray
-import com.simplemobiletools.commons.R
+import com.mobilestartools.commons.R
 import com.simplemobiletools.commons.extensions.*
 import com.simplemobiletools.commons.models.PhoneNumber
 import com.simplemobiletools.commons.models.contacts.*

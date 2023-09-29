@@ -2,8 +2,8 @@ package com.simplemobiletools.commons.dialogs
 
 import android.app.Activity
 import android.text.format.DateFormat
-import com.simplemobiletools.commons.R
-import com.simplemobiletools.commons.databinding.DialogChangeDateTimeFormatBinding
+import com.mobilestartools.commons.R
+import com.mobilestartools.commons.databinding.DialogChangeDateTimeFormatBinding
 import com.simplemobiletools.commons.extensions.baseConfig
 import com.simplemobiletools.commons.extensions.getAlertDialogBuilder
 import com.simplemobiletools.commons.extensions.setupDialogStuff

@@ -5,8 +5,8 @@ import android.content.DialogInterface
 import android.view.KeyEvent
 import android.view.View
 import androidx.appcompat.app.AlertDialog
-import com.simplemobiletools.commons.R
-import com.simplemobiletools.commons.databinding.DialogCustomIntervalPickerBinding
+import com.mobilestartools.commons.R
+import com.mobilestartools.commons.databinding.DialogCustomIntervalPickerBinding
 import com.simplemobiletools.commons.extensions.*
 import com.simplemobiletools.commons.helpers.DAY_SECONDS
 import com.simplemobiletools.commons.helpers.HOUR_SECONDS

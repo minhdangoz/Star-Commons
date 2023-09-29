@@ -1,9 +1,9 @@
 package com.simplemobiletools.commons.dialogs
 
 import androidx.appcompat.app.AlertDialog
-import com.simplemobiletools.commons.R
+import com.mobilestartools.commons.R
 import com.simplemobiletools.commons.activities.BaseSimpleActivity
-import com.simplemobiletools.commons.databinding.DialogExportSettingsBinding
+import com.mobilestartools.commons.databinding.DialogExportSettingsBinding
 import com.simplemobiletools.commons.extensions.*
 
 class ExportSettingsDialog(

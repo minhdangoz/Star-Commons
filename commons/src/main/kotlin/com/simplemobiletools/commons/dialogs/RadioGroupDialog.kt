@@ -6,8 +6,8 @@ import android.view.ViewGroup
 import android.widget.RadioButton
 import android.widget.RadioGroup
 import androidx.appcompat.app.AlertDialog
-import com.simplemobiletools.commons.R
-import com.simplemobiletools.commons.databinding.DialogRadioGroupBinding
+import com.mobilestartools.commons.R
+import com.mobilestartools.commons.databinding.DialogRadioGroupBinding
 import com.simplemobiletools.commons.extensions.getAlertDialogBuilder
 import com.simplemobiletools.commons.extensions.onGlobalLayout
 import com.simplemobiletools.commons.extensions.setupDialogStuff

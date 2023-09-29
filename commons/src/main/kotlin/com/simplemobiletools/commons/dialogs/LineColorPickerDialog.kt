@@ -22,13 +22,13 @@ import androidx.compose.ui.window.DialogProperties
 import androidx.compose.ui.window.DialogWindowProvider
 import androidx.core.view.updateLayoutParams
 import com.google.android.material.appbar.MaterialToolbar
-import com.simplemobiletools.commons.R
+import com.mobilestartools.commons.R
 import com.simplemobiletools.commons.activities.BaseSimpleActivity
 import com.simplemobiletools.commons.compose.alert_dialog.AlertDialogState
 import com.simplemobiletools.commons.compose.alert_dialog.rememberAlertDialogState
 import com.simplemobiletools.commons.compose.extensions.MyDevices
 import com.simplemobiletools.commons.compose.theme.AppThemeSurface
-import com.simplemobiletools.commons.databinding.DialogLineColorPickerBinding
+import com.mobilestartools.commons.databinding.DialogLineColorPickerBinding
 import com.simplemobiletools.commons.extensions.*
 import com.simplemobiletools.commons.interfaces.LineColorPickerListener
 

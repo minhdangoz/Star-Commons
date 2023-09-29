@@ -13,7 +13,7 @@ import androidx.compose.ui.platform.LocalSoftwareKeyboardController
 import androidx.compose.ui.platform.SoftwareKeyboardController
 import androidx.compose.ui.res.colorResource
 import androidx.compose.ui.unit.dp
-import com.simplemobiletools.commons.R
+import com.mobilestartools.commons.R
 import com.simplemobiletools.commons.compose.theme.LocalTheme
 import com.simplemobiletools.commons.compose.theme.Shapes
 import com.simplemobiletools.commons.compose.theme.light_grey_stroke

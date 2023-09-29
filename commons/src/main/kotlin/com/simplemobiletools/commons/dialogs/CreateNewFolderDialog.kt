@@ -2,9 +2,9 @@ package com.simplemobiletools.commons.dialogs
 
 import android.view.View
 import androidx.appcompat.app.AlertDialog
-import com.simplemobiletools.commons.R
+import com.mobilestartools.commons.R
 import com.simplemobiletools.commons.activities.BaseSimpleActivity
-import com.simplemobiletools.commons.databinding.DialogCreateNewFolderBinding
+import com.mobilestartools.commons.databinding.DialogCreateNewFolderBinding
 import com.simplemobiletools.commons.extensions.*
 import com.simplemobiletools.commons.helpers.isRPlus
 import java.io.File

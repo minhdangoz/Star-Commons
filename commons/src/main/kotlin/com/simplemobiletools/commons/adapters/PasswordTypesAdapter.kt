@@ -7,7 +7,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.biometric.auth.AuthPromptHost
 import androidx.viewpager.widget.PagerAdapter
-import com.simplemobiletools.commons.R
+import com.mobilestartools.commons.R
 import com.simplemobiletools.commons.helpers.PROTECTION_FINGERPRINT
 import com.simplemobiletools.commons.helpers.PROTECTION_PATTERN
 import com.simplemobiletools.commons.helpers.PROTECTION_PIN

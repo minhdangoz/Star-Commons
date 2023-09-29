@@ -29,7 +29,7 @@ fun SettingsTitleTextComponent(
                 .padding(horizontal = 4.dp),
             color = color,
             fontSize = with(LocalDensity.current) {
-                dimensionResource(id = com.simplemobiletools.commons.R.dimen.normal_text_size).toSp()
+                dimensionResource(id = com.mobilestartools.commons.R.dimen.normal_text_size).toSp()
             },
             maxLines = maxLines,
             overflow = overflow

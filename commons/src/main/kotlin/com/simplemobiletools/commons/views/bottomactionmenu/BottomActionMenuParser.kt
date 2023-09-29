@@ -5,7 +5,7 @@ import android.util.AttributeSet
 import android.util.Xml
 import android.view.MenuItem
 import android.view.View
-import com.simplemobiletools.commons.R
+import com.mobilestartools.commons.R
 import org.xmlpull.v1.XmlPullParser
 
 internal class BottomActionMenuParser(private val context: Context) {

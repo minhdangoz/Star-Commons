@@ -11,9 +11,9 @@ import android.widget.HorizontalScrollView
 import android.widget.LinearLayout
 import androidx.core.content.ContextCompat
 import androidx.core.view.ViewCompat
-import com.simplemobiletools.commons.R
-import com.simplemobiletools.commons.databinding.ItemBreadcrumbBinding
-import com.simplemobiletools.commons.databinding.ItemBreadcrumbFirstBinding
+import com.mobilestartools.commons.R
+import com.mobilestartools.commons.databinding.ItemBreadcrumbBinding
+import com.mobilestartools.commons.databinding.ItemBreadcrumbFirstBinding
 import com.simplemobiletools.commons.extensions.*
 import com.simplemobiletools.commons.models.FileDirItem
 

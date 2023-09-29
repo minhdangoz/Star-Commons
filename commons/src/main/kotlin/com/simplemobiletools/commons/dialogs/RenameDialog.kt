@@ -3,10 +3,10 @@ package com.simplemobiletools.commons.dialogs
 import android.view.LayoutInflater
 import android.view.WindowManager
 import androidx.appcompat.app.AlertDialog
-import com.simplemobiletools.commons.R
+import com.mobilestartools.commons.R
 import com.simplemobiletools.commons.activities.BaseSimpleActivity
 import com.simplemobiletools.commons.adapters.RenameAdapter
-import com.simplemobiletools.commons.databinding.DialogRenameBinding
+import com.mobilestartools.commons.databinding.DialogRenameBinding
 import com.simplemobiletools.commons.extensions.*
 import com.simplemobiletools.commons.helpers.RENAME_PATTERN
 import com.simplemobiletools.commons.helpers.RENAME_SIMPLE

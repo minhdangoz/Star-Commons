@@ -5,9 +5,9 @@ import android.content.Context
 import android.provider.MediaStore
 import android.util.AttributeSet
 import android.widget.RelativeLayout
-import com.simplemobiletools.commons.R
+import com.mobilestartools.commons.R
 import com.simplemobiletools.commons.activities.BaseSimpleActivity
-import com.simplemobiletools.commons.databinding.TabRenameSimpleBinding
+import com.mobilestartools.commons.databinding.TabRenameSimpleBinding
 import com.simplemobiletools.commons.extensions.*
 import com.simplemobiletools.commons.interfaces.RenameTab
 import com.simplemobiletools.commons.models.Android30RenameFormat

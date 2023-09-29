@@ -5,9 +5,9 @@ import android.view.LayoutInflater
 import androidx.appcompat.app.AlertDialog
 import androidx.biometric.auth.AuthPromptHost
 import androidx.fragment.app.FragmentActivity
-import com.simplemobiletools.commons.R
+import com.mobilestartools.commons.R
 import com.simplemobiletools.commons.adapters.PasswordTypesAdapter
-import com.simplemobiletools.commons.databinding.DialogSecurityBinding
+import com.mobilestartools.commons.databinding.DialogSecurityBinding
 import com.simplemobiletools.commons.extensions.*
 import com.simplemobiletools.commons.helpers.*
 import com.simplemobiletools.commons.interfaces.HashListener

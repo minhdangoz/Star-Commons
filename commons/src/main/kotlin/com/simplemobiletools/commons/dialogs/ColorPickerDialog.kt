@@ -11,8 +11,8 @@ import android.view.WindowManager
 import android.widget.EditText
 import android.widget.ImageView
 import androidx.appcompat.app.AlertDialog
-import com.simplemobiletools.commons.R
-import com.simplemobiletools.commons.databinding.DialogColorPickerBinding
+import com.mobilestartools.commons.R
+import com.mobilestartools.commons.databinding.DialogColorPickerBinding
 import com.simplemobiletools.commons.extensions.*
 import com.simplemobiletools.commons.helpers.isQPlus
 import com.simplemobiletools.commons.views.ColorPickerSquare

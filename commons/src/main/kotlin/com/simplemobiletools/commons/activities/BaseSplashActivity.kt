@@ -2,7 +2,7 @@ package com.simplemobiletools.commons.activities
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
-import com.simplemobiletools.commons.R
+import com.mobilestartools.commons.R
 import com.simplemobiletools.commons.extensions.*
 import com.simplemobiletools.commons.helpers.SIDELOADING_TRUE
 import com.simplemobiletools.commons.helpers.SIDELOADING_UNCHECKED

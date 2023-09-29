@@ -53,14 +53,14 @@ class MainActivity : BaseSimpleActivity() {
         val licenses = LICENSE_AUTOFITTEXTVIEW
 
         val faqItems = arrayListOf(
-            FAQItem(com.simplemobiletools.commons.R.string.faq_1_title_commons, com.simplemobiletools.commons.R.string.faq_1_text_commons),
-            FAQItem(com.simplemobiletools.commons.R.string.faq_1_title_commons, com.simplemobiletools.commons.R.string.faq_1_text_commons),
-            FAQItem(com.simplemobiletools.commons.R.string.faq_4_title_commons, com.simplemobiletools.commons.R.string.faq_4_text_commons)
+            FAQItem(com.mobilestartools.commons.R.string.faq_1_title_commons, com.mobilestartools.commons.R.string.faq_1_text_commons),
+            FAQItem(com.mobilestartools.commons.R.string.faq_1_title_commons, com.mobilestartools.commons.R.string.faq_1_text_commons),
+            FAQItem(com.mobilestartools.commons.R.string.faq_4_title_commons, com.mobilestartools.commons.R.string.faq_4_text_commons)
         )
 
-        if (!resources.getBoolean(com.simplemobiletools.commons.R.bool.hide_google_relations)) {
-            faqItems.add(FAQItem(com.simplemobiletools.commons.R.string.faq_2_title_commons, com.simplemobiletools.commons.R.string.faq_2_text_commons))
-            faqItems.add(FAQItem(com.simplemobiletools.commons.R.string.faq_6_title_commons, com.simplemobiletools.commons.R.string.faq_6_text_commons))
+        if (!resources.getBoolean(com.mobilestartools.commons.R.bool.hide_google_relations)) {
+            faqItems.add(FAQItem(com.mobilestartools.commons.R.string.faq_2_title_commons, com.mobilestartools.commons.R.string.faq_2_text_commons))
+            faqItems.add(FAQItem(com.mobilestartools.commons.R.string.faq_6_title_commons, com.mobilestartools.commons.R.string.faq_6_text_commons))
         }
 
         startAboutActivity(R.string.smtco_app_name, licenses, BuildConfig.VERSION_NAME, faqItems, true)
@@ -69,16 +69,16 @@ class MainActivity : BaseSimpleActivity() {
     private fun launchBottomSheetDemo() {
         BottomSheetChooserDialog.createChooser(
             fragmentManager = supportFragmentManager,
-            title = com.simplemobiletools.commons.R.string.please_select_destination,
+            title = com.mobilestartools.commons.R.string.please_select_destination,
             items = arrayOf(
-                SimpleListItem(1, com.simplemobiletools.commons.R.string.record_video, com.simplemobiletools.commons.R.drawable.ic_camera_vector),
+                SimpleListItem(1, com.mobilestartools.commons.R.string.record_video, com.mobilestartools.commons.R.drawable.ic_camera_vector),
                 SimpleListItem(
                     2,
-                    com.simplemobiletools.commons.R.string.record_audio,
-                    com.simplemobiletools.commons.R.drawable.ic_microphone_vector,
+                    com.mobilestartools.commons.R.string.record_audio,
+                    com.mobilestartools.commons.R.drawable.ic_microphone_vector,
                     selected = true
                 ),
-                SimpleListItem(4, com.simplemobiletools.commons.R.string.choose_contact, com.simplemobiletools.commons.R.drawable.ic_add_person_vector)
+                SimpleListItem(4, com.mobilestartools.commons.R.string.choose_contact, com.mobilestartools.commons.R.drawable.ic_add_person_vector)
             )
         ) {
             toast("Clicked ${it.id}")

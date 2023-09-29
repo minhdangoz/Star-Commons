@@ -42,7 +42,7 @@ import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.tooling.preview.PreviewParameter
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
-import com.simplemobiletools.commons.R
+import com.mobilestartools.commons.R
 import com.simplemobiletools.commons.compose.components.SimpleDropDownMenuItem
 import com.simplemobiletools.commons.compose.extensions.*
 import com.simplemobiletools.commons.compose.menus.ActionItem
