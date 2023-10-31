@@ -34,10 +34,10 @@ import androidx.biometric.auth.Class2BiometricAuthPrompt
 import androidx.core.view.WindowInsetsCompat
 import androidx.fragment.app.FragmentActivity
 import com.google.android.material.dialog.MaterialAlertDialogBuilder
-import com.simplemobiletools.commons.R
+import com.mobilestartools.commons.R
 import com.simplemobiletools.commons.activities.BaseSimpleActivity
 import com.simplemobiletools.commons.compose.extensions.DEVELOPER_PLAY_STORE_URL
-import com.simplemobiletools.commons.databinding.DialogTitleBinding
+import com.mobilestartools.commons.databinding.DialogTitleBinding
 import com.simplemobiletools.commons.dialogs.*
 import com.simplemobiletools.commons.dialogs.WritePermissionDialog.WritePermissionDialogMode
 import com.simplemobiletools.commons.helpers.*

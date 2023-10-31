@@ -32,7 +32,7 @@ class MainActivity : ComponentActivity() {
         enableEdgeToEdgeSimple()
         setContent {
             AppThemeSurface {
-                val showMoreApps = onEventValue { !resources.getBoolean(com.simplemobiletools.commons.R.bool.hide_google_relations) }
+                val showMoreApps = onEventValue { !resources.getBoolean(com.mobilestartools.commons.R.bool.hide_google_relations) }
 
                 MainScreen(
                     openColorCustomization = ::startCustomizationActivity,
@@ -46,7 +46,7 @@ class MainActivity : ComponentActivity() {
                         ConfirmationDialog(
                             this@MainActivity,
                             FAKE_VERSION_APP_LABEL,
-                            positive = com.simplemobiletools.commons.R.string.ok,
+                            positive = com.mobilestartools.commons.R.string.ok,
                             negative = 0
                         ) {
                             launchViewIntent(DEVELOPER_PLAY_STORE_URL)

@@ -2,7 +2,7 @@ package com.simplemobiletools.commons.compose.extensions
 
 import android.app.Activity
 import android.content.Context
-import com.simplemobiletools.commons.R
+import com.mobilestartools.commons.R
 import com.simplemobiletools.commons.extensions.baseConfig
 import com.simplemobiletools.commons.extensions.redirectToRateUs
 import com.simplemobiletools.commons.extensions.toast

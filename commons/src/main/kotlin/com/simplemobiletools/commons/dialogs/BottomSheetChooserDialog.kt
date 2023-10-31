@@ -17,7 +17,7 @@ import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.sp
 import androidx.fragment.app.FragmentManager
-import com.simplemobiletools.commons.R
+import com.mobilestartools.commons.R
 import com.simplemobiletools.commons.adapters.setupSimpleListItem
 import com.simplemobiletools.commons.compose.alert_dialog.dialogContainerColor
 import com.simplemobiletools.commons.compose.alert_dialog.dialogTextColor
@@ -28,7 +28,7 @@ import com.simplemobiletools.commons.compose.bottom_sheet.rememberBottomSheetDia
 import com.simplemobiletools.commons.compose.extensions.MyDevices
 import com.simplemobiletools.commons.compose.theme.AppThemeSurface
 import com.simplemobiletools.commons.compose.theme.SimpleTheme
-import com.simplemobiletools.commons.databinding.ItemSimpleListBinding
+import com.mobilestartools.commons.databinding.ItemSimpleListBinding
 import com.simplemobiletools.commons.fragments.BaseBottomSheetDialogFragment
 import com.simplemobiletools.commons.models.SimpleListItem
 import kotlinx.collections.immutable.ImmutableList
