@@ -18,21 +18,18 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.ColorFilter
-import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.res.stringResource
-import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.compose.ui.window.DialogProperties
-import com.mobilestartools.commons.R
-import com.simplemobiletools.commons.compose.alert_dialog.AlertDialogState
-import com.simplemobiletools.commons.compose.alert_dialog.rememberAlertDialogState
+import com.simplemobiletools.commons.R
+import com.simplemobiletools.commons.compose.alert_dialog.*
+import com.simplemobiletools.commons.compose.components.LinkifyTextComponent
 import com.simplemobiletools.commons.compose.extensions.MyDevices
-import com.simplemobiletools.commons.compose.extensions.getActivity
+import com.simplemobiletools.commons.compose.extensions.composeDonateIntent
 import com.simplemobiletools.commons.compose.extensions.rememberMutableInteractionSource
-import com.simplemobiletools.commons.compose.screens.LinkifyText
-import com.simplemobiletools.commons.compose.screens.stringFromHTML
 import com.simplemobiletools.commons.compose.theme.AppThemeSurface
-import com.mobilestartools.commons.databinding.DialogFeatureLockedBinding
+import com.simplemobiletools.commons.compose.theme.SimpleTheme
+import com.simplemobiletools.commons.databinding.DialogFeatureLockedBinding
 import com.simplemobiletools.commons.extensions.*
 
 class FeatureLockedDialog(val activity: Activity, val callback: () -> Unit) {
@@ -69,23 +66,20 @@ class FeatureLockedDialog(val activity: Activity, val callback: () -> Unit) {
 fun FeatureLockedAlertDialog(
     alertDialogState: AlertDialogState,
     modifier: Modifier = Modifier,
-    callback: () -> Unit
+    cancelCallback: () -> Unit
 ) {
-    val localContext = LocalContext.current.getActivity()
-    val donateIntent = {
-        localContext.launchViewIntent(R.string.thank_you_url)
-    }
+    val donateIntent = composeDonateIntent()
     androidx.compose.material3.AlertDialog(
         containerColor = dialogContainerColor,
         modifier = modifier
             .dialogBorder,
         properties = DialogProperties(dismissOnClickOutside = false, dismissOnBackPress = false),
-        onDismissRequest = {},
+        onDismissRequest = cancelCallback,
         shape = dialogShape,
         tonalElevation = dialogElevation,
         dismissButton = {
             TextButton(onClick = {
-                callback()
+                cancelCallback()
                 alertDialogState.hide()
             }) {
                 Text(text = stringResource(id = R.string.later))
@@ -94,7 +88,6 @@ fun FeatureLockedAlertDialog(
         confirmButton = {
             TextButton(onClick = {
                 donateIntent()
-                alertDialogState.hide()
             }) {
                 Text(text = stringResource(id = R.string.purchase))
             }
@@ -108,13 +101,12 @@ fun FeatureLockedAlertDialog(
                     Icons.Filled.Lock,
                     contentDescription = null,
                     modifier = Modifier
-                        .size(56.dp)
+                        .size(SimpleTheme.dimens.icon.large)
                         .clickable(
                             indication = null,
                             interactionSource = rememberMutableInteractionSource(),
                             onClick = {
                                 donateIntent()
-                                alertDialogState.hide()
                             }
                         ),
                     colorFilter = ColorFilter.tint(dialogTextColor)
@@ -123,13 +115,13 @@ fun FeatureLockedAlertDialog(
         },
         text = {
             val source = stringResource(id = R.string.features_locked)
-            LinkifyText(
+            LinkifyTextComponent(
                 fontSize = 16.sp,
                 removeUnderlines = false,
                 modifier = Modifier.fillMaxWidth(),
                 textAlignment = TextView.TEXT_ALIGNMENT_CENTER
             ) {
-                stringFromHTML(source)
+                source.fromHtml()
             }
         }
     )

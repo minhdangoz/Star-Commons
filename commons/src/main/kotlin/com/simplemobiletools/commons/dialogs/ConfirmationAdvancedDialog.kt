@@ -10,12 +10,11 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.unit.sp
 import androidx.compose.ui.window.DialogProperties
-import com.mobilestartools.commons.R
-import com.simplemobiletools.commons.compose.alert_dialog.AlertDialogState
-import com.simplemobiletools.commons.compose.alert_dialog.rememberAlertDialogState
+import com.simplemobiletools.commons.R
+import com.simplemobiletools.commons.compose.alert_dialog.*
 import com.simplemobiletools.commons.compose.extensions.MyDevices
 import com.simplemobiletools.commons.compose.theme.AppThemeSurface
-import com.mobilestartools.commons.databinding.DialogMessageBinding
+import com.simplemobiletools.commons.databinding.DialogMessageBinding
 import com.simplemobiletools.commons.extensions.getAlertDialogBuilder
 import com.simplemobiletools.commons.extensions.setupDialogStuff
 
@@ -61,12 +60,12 @@ class ConfirmationAdvancedDialog(
 
 @Composable
 fun ConfirmationAdvancedAlertDialog(
-    modifier: Modifier = Modifier,
     alertDialogState: AlertDialogState,
+    modifier: Modifier = Modifier,
     message: String = "",
-    messageId: Int = R.string.proceed_with_deletion,
-    positive: Int = R.string.yes,
-    negative: Int = R.string.no,
+    messageId: Int? = R.string.proceed_with_deletion,
+    positive: Int? = R.string.yes,
+    negative: Int? = R.string.no,
     cancelOnTouchOutside: Boolean = true,
     callback: (result: Boolean) -> Unit
 ) {
@@ -83,25 +82,29 @@ fun ConfirmationAdvancedAlertDialog(
         shape = dialogShape,
         tonalElevation = dialogElevation,
         dismissButton = {
-            TextButton(onClick = {
-                alertDialogState.hide()
-                callback(false)
-            }) {
-                Text(text = stringResource(id = negative))
+            if (negative != null) {
+                TextButton(onClick = {
+                    alertDialogState.hide()
+                    callback(false)
+                }) {
+                    Text(text = stringResource(id = negative))
+                }
             }
         },
         confirmButton = {
-            TextButton(onClick = {
-                alertDialogState.hide()
-                callback(true)
-            }) {
-                Text(text = stringResource(id = positive))
+            if (positive != null) {
+                TextButton(onClick = {
+                    alertDialogState.hide()
+                    callback(true)
+                }) {
+                    Text(text = stringResource(id = positive))
+                }
             }
         },
         text = {
             Text(
                 modifier = Modifier.fillMaxWidth(),
-                text = message.ifEmpty { stringResource(id = messageId) },
+                text = message.ifEmpty { messageId?.let { stringResource(id = it) }.orEmpty() },
                 fontSize = 16.sp,
                 color = dialogTextColor,
             )
@@ -113,7 +116,8 @@ fun ConfirmationAdvancedAlertDialog(
 @MyDevices
 private fun ConfirmationAdvancedAlertDialogPreview() {
     AppThemeSurface {
-        ConfirmationAdvancedAlertDialog(alertDialogState = rememberAlertDialogState(),
-            callback = {})
+        ConfirmationAdvancedAlertDialog(
+            alertDialogState = rememberAlertDialogState()
+        ) {}
     }
 }

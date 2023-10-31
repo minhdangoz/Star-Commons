@@ -7,7 +7,6 @@ import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.lazy.items
 import androidx.compose.material3.ListItem
-import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
@@ -17,13 +16,16 @@ import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.mobilestartools.commons.R
+import com.simplemobiletools.commons.compose.components.LinkifyTextComponent
 import com.simplemobiletools.commons.compose.extensions.MyDevices
+import com.simplemobiletools.commons.compose.lists.SimpleLazyListScaffold
 import com.simplemobiletools.commons.compose.settings.SettingsGroupTitle
 import com.simplemobiletools.commons.compose.settings.SettingsHorizontalDivider
 import com.simplemobiletools.commons.compose.settings.SettingsListItem
 import com.simplemobiletools.commons.compose.settings.SettingsTitleTextComponent
-import com.simplemobiletools.commons.compose.settings.scaffold.SettingsLazyScaffold
 import com.simplemobiletools.commons.compose.theme.AppThemeSurface
+import com.simplemobiletools.commons.compose.theme.SimpleTheme
+import com.simplemobiletools.commons.extensions.fromHtml
 import com.simplemobiletools.commons.models.LanguageContributor
 import kotlinx.collections.immutable.ImmutableList
 import kotlinx.collections.immutable.toImmutableList
@@ -36,7 +38,7 @@ internal fun ContributorsScreen(
     showContributorsLabel: Boolean,
     contributors: ImmutableList<LanguageContributor>
 ) {
-    SettingsLazyScaffold(
+    SimpleLazyListScaffold(
         title = { scrolledColor ->
             Text(
                 text = stringResource(id = R.string.contributors),
@@ -59,12 +61,12 @@ internal fun ContributorsScreen(
             SettingsListItem(
                 text = stringResource(id = R.string.contributors_developers),
                 icon = R.drawable.ic_code_vector,
-                tint = MaterialTheme.colorScheme.onSurface,
+                tint = SimpleTheme.colorScheme.onSurface,
                 fontSize = 14.sp
             )
         }
         item {
-            Spacer(modifier = Modifier.padding(vertical = 8.dp))
+            Spacer(modifier = Modifier.padding(vertical = SimpleTheme.dimens.padding.medium))
         }
         item {
             SettingsHorizontalDivider()
@@ -85,15 +87,15 @@ internal fun ContributorsScreen(
                     icon = R.drawable.ic_heart_vector,
                     text = {
                         val source = stringResource(id = R.string.contributors_label)
-                        LinkifyText {
-                            stringFromHTML(source)
+                        LinkifyTextComponent {
+                            source.fromHtml()
                         }
                     },
-                    tint = MaterialTheme.colorScheme.onSurface
+                    tint = SimpleTheme.colorScheme.onSurface
                 )
             }
             item {
-                Spacer(modifier = Modifier.padding(bottom = 8.dp))
+                Spacer(modifier = Modifier.padding(bottom = SimpleTheme.dimens.padding.medium))
             }
         }
        
@@ -116,8 +118,8 @@ private fun ContributorItem(
         },
         leadingContent = {
             val imageSize = Modifier
-                .size(48.dp)
-                .padding(8.dp)
+                .size(SimpleTheme.dimens.icon.medium)
+                .padding(SimpleTheme.dimens.padding.medium)
             Image(
                 modifier = imageSize,
                 painter = painterResource(id = languageContributor.iconId),
@@ -131,7 +133,7 @@ private fun ContributorItem(
                 text = stringResource(id = languageContributor.contributorsId),
                 modifier = Modifier
                     .fillMaxWidth(),
-                color = MaterialTheme.colorScheme.onSurface
+                color = SimpleTheme.colorScheme.onSurface
             )
         }
     )

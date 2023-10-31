@@ -1,31 +1,23 @@
 package com.simplemobiletools.commons.compose.screens
 
-import android.os.Build
-import android.text.Html
-import android.text.Spanned
-import android.text.method.LinkMovementMethod
-import android.widget.TextView
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.lazy.itemsIndexed
 import androidx.compose.material3.ListItem
-import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
-import androidx.compose.runtime.remember
 import androidx.compose.ui.Modifier
-import androidx.compose.ui.graphics.toArgb
-import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.res.stringResource
-import androidx.compose.ui.unit.TextUnit
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.compose.ui.viewinterop.AndroidView
 import com.mobilestartools.commons.R
+import com.simplemobiletools.commons.compose.components.LinkifyTextComponent
 import com.simplemobiletools.commons.compose.extensions.MyDevices
+import com.simplemobiletools.commons.compose.lists.SimpleLazyListScaffold
 import com.simplemobiletools.commons.compose.settings.SettingsHorizontalDivider
-import com.simplemobiletools.commons.compose.settings.scaffold.SettingsLazyScaffold
 import com.simplemobiletools.commons.compose.theme.AppThemeSurface
-import com.simplemobiletools.commons.extensions.removeUnderlines
+import com.simplemobiletools.commons.compose.theme.SimpleTheme
+import com.simplemobiletools.commons.extensions.fromHtml
 import com.simplemobiletools.commons.models.FAQItem
 import kotlinx.collections.immutable.ImmutableList
 import kotlinx.collections.immutable.toImmutableList
@@ -35,10 +27,10 @@ internal fun FAQScreen(
     goBack: () -> Unit,
     faqItems: ImmutableList<FAQItem>,
 ) {
-    SettingsLazyScaffold(
+    SimpleLazyListScaffold(
         title = stringResource(id = R.string.frequently_asked_questions),
         goBack = goBack,
-        contentPadding = PaddingValues(bottom = 8.dp)
+        contentPadding = PaddingValues(bottom = SimpleTheme.dimens.padding.medium)
     ) {
         itemsIndexed(faqItems) { index, faqItem ->
             Column(modifier = Modifier.fillMaxWidth()) {
@@ -50,14 +42,14 @@ internal fun FAQScreen(
                             modifier = Modifier
                                 .fillMaxWidth()
                                 .padding(bottom = 6.dp),
-                            color = MaterialTheme.colorScheme.primary,
+                            color = SimpleTheme.colorScheme.primary,
                             lineHeight = 16.sp,
                         )
                     },
                     supportingContent = {
                         if (faqItem.text is Int) {
-                            val text = stringFromHTML(stringResource(id = faqItem.text))
-                            LinkifyText(
+                            val text = stringResource(id = faqItem.text).fromHtml()
+                            LinkifyTextComponent(
                                 text = { text },
                                 modifier = Modifier.fillMaxWidth(),
                                 fontSize = 14.sp
@@ -71,51 +63,15 @@ internal fun FAQScreen(
                         }
                     },
                 )
-                Spacer(modifier = Modifier.padding(bottom = 8.dp))
+                Spacer(modifier = Modifier.padding(bottom = SimpleTheme.dimens.padding.medium))
                 if (index != faqItems.lastIndex) {
                     SettingsHorizontalDivider(
                         modifier = Modifier
                             .fillMaxWidth()
-                            .padding(bottom = 4.dp)
+                            .padding(bottom = SimpleTheme.dimens.padding.small)
                     )
                 }
             }
-        }
-    }
-}
-
-@Suppress("deprecation")
-fun stringFromHTML(source: String): Spanned {
-    return if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.N) {
-        Html.fromHtml(source, Html.FROM_HTML_MODE_LEGACY)
-    } else {
-        Html.fromHtml(source)
-    }
-}
-
-@Composable
-fun LinkifyText(
-    modifier: Modifier = Modifier,
-    fontSize: TextUnit = 14.sp,
-    removeUnderlines: Boolean = true,
-    textAlignment : Int = TextView.TEXT_ALIGNMENT_TEXT_START,
-    text: () -> Spanned
-) {
-    val context = LocalContext.current
-    val customLinkifyTextView = remember {
-        TextView(context)
-    }
-    val textColor = MaterialTheme.colorScheme.onSurface
-    val linkTextColor = MaterialTheme.colorScheme.primary
-    AndroidView(modifier = modifier, factory = { customLinkifyTextView }) { textView ->
-        textView.setTextColor(textColor.toArgb())
-        textView.setLinkTextColor(linkTextColor.toArgb())
-        textView.text = text()
-        textView.textAlignment = textAlignment
-        textView.textSize = fontSize.value
-        textView.movementMethod = LinkMovementMethod.getInstance()
-        if (removeUnderlines) {
-            customLinkifyTextView.removeUnderlines()
         }
     }
 }

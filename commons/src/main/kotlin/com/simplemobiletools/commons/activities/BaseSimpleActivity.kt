@@ -41,8 +41,9 @@ import androidx.core.widget.NestedScrollView
 import androidx.recyclerview.widget.RecyclerView
 import com.mobilestartools.commons.R
 import com.simplemobiletools.commons.asynctasks.CopyMoveTask
+import com.simplemobiletools.commons.compose.extensions.DEVELOPER_PLAY_STORE_URL
 import com.simplemobiletools.commons.dialogs.*
-import com.simplemobiletools.commons.dialogs.WritePermissionDialog.Mode
+import com.simplemobiletools.commons.dialogs.WritePermissionDialog.WritePermissionDialogMode
 import com.simplemobiletools.commons.extensions.*
 import com.simplemobiletools.commons.helpers.*
 import com.simplemobiletools.commons.interfaces.CopyMoveListener
@@ -765,7 +766,7 @@ abstract class BaseSimpleActivity : AppCompatActivity() {
         }
 
         funAfterSAFPermission = callback
-        WritePermissionDialog(this, Mode.Otg) {
+        WritePermissionDialog(this, WritePermissionDialogMode.Otg) {
             Intent(Intent.ACTION_OPEN_DOCUMENT_TREE).apply {
                 try {
                     startActivityForResult(this, OPEN_DOCUMENT_TREE_OTG)

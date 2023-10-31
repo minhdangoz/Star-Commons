@@ -15,18 +15,13 @@ import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.sp
-import com.mobilestartools.commons.R
-import com.simplemobiletools.commons.compose.alert_dialog.AlertDialogState
-import com.simplemobiletools.commons.compose.alert_dialog.rememberAlertDialogState
+import com.simplemobiletools.commons.R
+import com.simplemobiletools.commons.compose.alert_dialog.*
+import com.simplemobiletools.commons.compose.components.LinkifyTextComponent
 import com.simplemobiletools.commons.compose.extensions.MyDevices
-import com.simplemobiletools.commons.compose.screens.LinkifyText
-import com.simplemobiletools.commons.compose.screens.stringFromHTML
 import com.simplemobiletools.commons.compose.theme.AppThemeSurface
-import com.mobilestartools.commons.databinding.DialogTextviewBinding
-import com.simplemobiletools.commons.extensions.getAlertDialogBuilder
-import com.simplemobiletools.commons.extensions.getStringsPackageName
-import com.simplemobiletools.commons.extensions.launchViewIntent
-import com.simplemobiletools.commons.extensions.setupDialogStuff
+import com.simplemobiletools.commons.databinding.DialogTextviewBinding
+import com.simplemobiletools.commons.extensions.*
 
 class AppSideloadedDialog(val activity: Activity, val callback: () -> Unit) {
     private var dialog: AlertDialog? = null
@@ -65,8 +60,8 @@ class AppSideloadedDialog(val activity: Activity, val callback: () -> Unit) {
 
 @Composable
 fun AppSideLoadedAlertDialog(
+    alertDialogState: AlertDialogState,
     modifier: Modifier = Modifier,
-    alertDialogState: AlertDialogState = rememberAlertDialogState(),
     onDownloadClick: (url: String) -> Unit,
     onCancelClick: () -> Unit
 ) {
@@ -96,8 +91,8 @@ fun AppSideLoadedAlertDialog(
         shape = dialogShape,
         text = {
             val source = stringResource(id = R.string.sideloaded_app, url)
-            LinkifyText(fontSize = 16.sp, removeUnderlines = false) {
-                stringFromHTML(source)
+            LinkifyTextComponent(fontSize = 16.sp, removeUnderlines = false) {
+                source.fromHtml()
             }
         },
         title = {
@@ -117,6 +112,6 @@ fun AppSideLoadedAlertDialog(
 @MyDevices
 private fun AppSideLoadedAlertDialogPreview() {
     AppThemeSurface {
-        AppSideLoadedAlertDialog(alertDialogState = rememberAlertDialogState(), onDownloadClick = {}, onCancelClick = {})
+        AppSideLoadedAlertDialog(alertDialogState = rememberAlertDialogState(), onDownloadClick = {}) {}
     }
 }

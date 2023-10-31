@@ -6,17 +6,16 @@ import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.lazy.itemsIndexed
 import androidx.compose.material3.ListItem
 import androidx.compose.material3.ListItemDefaults
-import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.res.stringResource
-import androidx.compose.ui.unit.dp
-import com.mobilestartools.commons.R
+import com.simplemobiletools.commons.R
 import com.simplemobiletools.commons.compose.extensions.MyDevices
+import com.simplemobiletools.commons.compose.lists.SimpleLazyListScaffold
 import com.simplemobiletools.commons.compose.settings.SettingsHorizontalDivider
-import com.simplemobiletools.commons.compose.settings.scaffold.SettingsLazyScaffold
 import com.simplemobiletools.commons.compose.theme.AppThemeSurface
+import com.simplemobiletools.commons.compose.theme.SimpleTheme
 import com.simplemobiletools.commons.helpers.*
 import com.simplemobiletools.commons.models.License
 import kotlinx.collections.immutable.ImmutableList
@@ -28,7 +27,7 @@ internal fun LicenseScreen(
     thirdPartyLicenses: ImmutableList<License>,
     onLicenseClick: (urlId: Int) -> Unit,
 ) {
-    SettingsLazyScaffold(
+    SimpleLazyListScaffold(
         title = stringResource(id = R.string.third_party_licences),
         goBack = goBack
     ) {
@@ -36,7 +35,7 @@ internal fun LicenseScreen(
             Column {
                 LicenseItem(license, onLicenseClick)
                 if (index != thirdPartyLicenses.lastIndex) {
-                    SettingsHorizontalDivider(modifier = Modifier.padding(bottom = 4.dp))
+                    SettingsHorizontalDivider(modifier = Modifier.padding(bottom = SimpleTheme.dimens.padding.small))
                 }
             }
         }
@@ -59,9 +58,9 @@ private fun LicenseItem(
     }, supportingContent = {
         Text(
             text = stringResource(id = license.textId),
-            modifier = Modifier.padding(top = 2.dp),
+            modifier = Modifier.padding(top = SimpleTheme.dimens.padding.extraSmall),
         )
-    }, colors = ListItemDefaults.colors(headlineColor = MaterialTheme.colorScheme.primary, supportingColor = MaterialTheme.colorScheme.onSurface))
+    }, colors = ListItemDefaults.colors(headlineColor = SimpleTheme.colorScheme.primary, supportingColor = SimpleTheme.colorScheme.onSurface))
 }
 
 @Composable
