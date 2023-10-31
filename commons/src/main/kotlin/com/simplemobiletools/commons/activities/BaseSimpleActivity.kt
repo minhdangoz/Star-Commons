@@ -658,11 +658,13 @@ abstract class BaseSimpleActivity : AppCompatActivity() {
     }
 
     fun handleCustomizeColorsClick() {
-        if (isOrWasThankYouInstalled()) {
-            startCustomizationActivity()
-        } else {
-            FeatureLockedDialog(this) {}
-        }
+        startCustomizationActivity()
+
+//        if (isOrWasThankYouInstalled()) {
+//            startCustomizationActivity()
+//        } else {
+//            FeatureLockedDialog(this) {}
+//        }
     }
 
     @RequiresApi(Build.VERSION_CODES.O)
