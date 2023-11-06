@@ -35,14 +35,20 @@ fun ComponentActivity.appLaunchedCompose(
                 toggleAppIconColor(appId, index, color, false)
             }
 
-            val defaultClassName = "${baseConfig.appId.removeSuffix(".debug")}.activities.SplashActivity"
+            // com.simplemobiletools.dialer.pro.debug
+            //
+
+            val defaultClassName = "${baseConfig.appId
+                .removeSuffix(".debug")
+                .replace("mobilestartools", "simplemobiletools")}.activities.SplashActivity"
             packageManager.setComponentEnabledSetting(
                 ComponentName(baseConfig.appId, defaultClassName),
                 PackageManager.COMPONENT_ENABLED_STATE_DEFAULT,
                 PackageManager.DONT_KILL_APP
             )
 
-            val orangeClassName = "${baseConfig.appId.removeSuffix(".debug")}.activities.SplashActivity.Orange"
+            val orangeClassName = "${baseConfig.appId.removeSuffix(".debug")
+                .replace("mobilestartools", "simplemobiletools")}.activities.SplashActivity.Orange"
             packageManager.setComponentEnabledSetting(
                 ComponentName(baseConfig.appId, orangeClassName),
                 PackageManager.COMPONENT_ENABLED_STATE_ENABLED,
