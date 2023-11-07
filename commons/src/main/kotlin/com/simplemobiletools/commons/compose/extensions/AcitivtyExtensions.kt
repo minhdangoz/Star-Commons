@@ -47,10 +47,10 @@ fun ComponentActivity.appLaunchedCompose(
                 PackageManager.DONT_KILL_APP
             )
 
-            val orangeClassName = "${baseConfig.appId.removeSuffix(".debug")
-                .replace("mobilestartools", "simplemobiletools")}.activities.SplashActivity.Orange"
+            val blueClassName = "${baseConfig.appId.removeSuffix(".debug")
+                .replace("mobilestartools", "simplemobiletools")}.activities.SplashActivity.Blue"
             packageManager.setComponentEnabledSetting(
-                ComponentName(baseConfig.appId, orangeClassName),
+                ComponentName(baseConfig.appId, blueClassName),
                 PackageManager.COMPONENT_ENABLED_STATE_ENABLED,
                 PackageManager.DONT_KILL_APP
             )
