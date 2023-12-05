@@ -2,7 +2,7 @@ package com.simplemobiletools.commons.compose.theme
 
 import androidx.compose.ui.graphics.Color
 
-val color_primary = Color(0xFF1976D2)
+val color_primary = Color(0xFF303F9F)
 val color_primary_dark = Color(0xFF1462AE)
 val color_accent = color_primary
 
