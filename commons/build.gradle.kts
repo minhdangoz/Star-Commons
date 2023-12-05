@@ -60,6 +60,8 @@ android {
         getByName("main").java.srcDirs("src/main/kotlin")
     }
     namespace = libs.versions.app.version.groupId.get()
+
+
 }
 
 publishing.publications {

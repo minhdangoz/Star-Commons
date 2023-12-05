@@ -6,6 +6,7 @@ import android.content.Context
 import android.content.pm.PackageManager
 import android.content.res.Configuration
 import android.graphics.Color
+import android.util.Log
 import android.view.ViewGroup
 import androidx.loader.content.CursorLoader
 import com.mobilestartools.commons.R
@@ -140,13 +141,16 @@ fun Context.getSharedThemeSync(cursorLoader: CursorLoader): SharedTheme? {
 
 fun Context.checkAppIconColor() {
     val appId = baseConfig.appId
+    Log.i("checkAppIconColor", "--> appId: $appId")
     if (appId.isNotEmpty() && baseConfig.lastIconColor != baseConfig.appIconColor) {
         getAppIconColors().forEachIndexed { index, color ->
+            Log.i("checkAppIconColor", "--> disable this color: $color")
             toggleAppIconColor(appId, index, color, false)
         }
 
         getAppIconColors().forEachIndexed { index, color ->
             if (baseConfig.appIconColor == color) {
+                Log.i("checkAppIconColor", "--> enable this color: $color")
                 toggleAppIconColor(appId, index, color, true)
             }
         }
