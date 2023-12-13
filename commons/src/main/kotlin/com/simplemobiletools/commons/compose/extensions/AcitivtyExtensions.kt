@@ -35,8 +35,8 @@ fun ComponentActivity.appLaunchedCompose(
                 toggleAppIconColor(appId, index, color, false)
             }
 
-            // com.simplemobiletools.dialer.pro.debug
-            //
+            // ex: com.simplemobiletools.dialer.pro.debug
+            // because of namespace, the classname must be simplemobiletools
 
             val defaultClassName = "${baseConfig.appId
                 .removeSuffix(".debug")
